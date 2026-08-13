@@ -1,0 +1,27 @@
+[project]
+name = "tvram"
+version = "0.1.0"
+description = "MCP email verification connector with a mock backend"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "fastmcp>=3.4.7",
+    "httpx>=0.28.1",
+    "uvicorn>=0.30",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.16",
+]
+
+[tool.ruff]
+line-length = 99
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
