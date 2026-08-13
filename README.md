@@ -2,6 +2,8 @@
 
 An MCP server that exposes email verification as a tool an agent can call.
 
+[![Demo video](https://drive.google.com/thumbnail?id=1bLt6Izvmd2o1jFf0qVUxLTcWSwYfa2HD&sz=w1000)](https://drive.google.com/file/d/1bLt6Izvmd2o1jFf0qVUxLTcWSwYfa2HD/view?usp=sharing)
+
 ```
 verify_email(address) -> { address, verdict: valid | invalid | risky, reason }
 ```
